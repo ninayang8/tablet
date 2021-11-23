@@ -1,0 +1,411 @@
+html{
+    scroll-behavior: smooth;
+}
+/* 3 */
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    line-height: 1;
+}
+/* 6 */
+header{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+nav ul{
+    list-style-type: none;
+  }
+
+/* nav li{
+    display: inline;
+    padding-right: 10px;
+} */
+
+nav{
+    padding: 10px;
+    background-color: #FFFFFF;
+    text-align: right;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: 950;
+}
+
+a:visited{
+    font-weight: 950;
+    text-decoration: underline;
+}
+nav.active a {
+    font-weight: 950;
+    text-decoration: underline;
+} 
+
+.underline{
+    text-decoration: underline;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    transition: top 1s ease-out;
+    z-index: 1;
+  
+    /* Requirement 3a code here*/
+    position: absolute;
+    top: -40px;
+}
+  
+  /* Requirement 3b code here*/
+.skip a:focus-visible{
+    border: 2px solid;
+}
+.container{
+    display: grid;
+    position: relative;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: 3fr auto auto auto auto;
+    grid-row-gap: 15px;
+}
+
+.profile-image{
+    background-color: #a1caf1;
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+}
+
+.profile-image > img{
+    border-radius: 50%;
+    margin: auto;
+    padding: 20px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.profile-text{
+    font-size: 25px;
+    color: #000000;
+    position: relative;
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+h1{
+    font-size: 30px;
+    color: #9258D5;
+}
+
+.fa{
+    white-space: nowrap;
+    padding: 5px;
+    font-size: 30px;
+    width: 100px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    color:#000000;
+}
+
+.athleticsI-image{
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    padding: 5px;
+    /* max-width: 100px; */
+}
+
+.researchI-image{
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
+    padding: 5px;
+    /* max-width: 100px; */
+}
+
+.psI-image{
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 1;
+    padding: 5px;
+    /* max-width: 100px; */
+}
+
+.ubiI-image{
+    grid-column: 4 / span 1;
+    grid-row: 5 / span 1;
+    padding: 5px;
+    max-width: 110px;
+}
+
+.index{
+    padding-left: 20px;
+    grid-column: 1 / span 2;
+}
+
+/* resume.html */
+.resume-container{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 15px;
+    grid-column: 2 / span 1;
+}
+
+.resume{
+    grid-column: 2 / span 1;
+    padding-top: 20px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.athletics-image{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    max-width: 100px;
+    padding: 0px 5px;
+}
+
+.athletics{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.align-left{
+    float: left;
+}
+
+.align-right{
+    float: right;
+}
+
+footer p{
+    padding-left: 10px;
+
+}
+
+.research-image{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    max-width: 100px;
+    padding: 0px 5px;
+}
+
+.research{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.ps-image{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    max-width: 100px;
+    padding: 0px 5px;
+}
+
+.ps{
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 5px 5px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.images h1{
+    padding-left: 10px;
+}
+
+.label{
+    display: none;
+}
+/* 
+.contact-info{
+    padding-right: 30px;
+    font-size:25px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+} */
+
+
+.contact-info p{
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+.contact-page {
+    margin: 15px;
+  }
+  
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.contact-info{
+    font-size: 25px;
+}
+
+/* .pfp-image{
+
+} */
+
+
+@keyframes logo_size{
+    from {
+      width: 50px;
+      opacity: 0;
+    }
+    to {
+      width: 425px; 
+      opacity: 1;
+    }
+}
+
+@media screen and (min-width: 850px){
+
+    nav{
+        /* display: flex;
+        align-items: left;
+        font-size: 25px; */
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        display: flex;
+        justify-content: left;
+    }
+
+    nav li{
+        display: inline;
+        padding-left: 10px;
+    }
+
+    .profile_image{
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+    }
+
+    .profile-image > img{
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 1;
+        width: 45%;
+    }
+
+    .resume-container{
+        display: grid;
+        position: relative;
+        grid-template-columns: 30% 70%;
+        padding-right: 40px;
+        grid-template-rows: auto auto auto auto auto;
+        grid-row-gap: 15px;
+        grid-column: 2 / span 1;
+    }
+
+
+    h1{
+        color: #471E76;
+    }
+
+    .profile-text{
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 2;
+        padding-right: 100px;
+        padding-top: 100px;
+        line-height: 2;
+    }
+
+    .athletics-image, .research-image, .ps-image{
+        min-width: 200px;
+        padding-left: 50px;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    
+    .athleticsI-image{
+       max-width: 250px;
+       max-height: 100px;
+       padding-left: 20px;
+    }
+
+    .researchI-image{
+        padding-top: 30px;
+        max-width: 300px;
+        max-height: 100px;
+    }
+
+    .psI-image{
+        padding-left: 50px;
+        max-width: 300px;
+        max-height: 100px;
+    }
+
+    .ubiI-image{
+        max-width: 180px;
+        padding-top: 20px;
+        max-height: 100px;
+    }
+
+    footer p{
+        padding-top: 60px;
+    }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #logo{
+        animation-name: logo_size;
+        animation-duration: 0s;
+        animation-iteration-count: 0;
+    }
+}
+
